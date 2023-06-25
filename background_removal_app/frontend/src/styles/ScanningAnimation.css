@@ -1,0 +1,34 @@
+.scanning-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .scanning-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: green;
+    animation: scanAnimation 4s linear infinite;
+  }
+  
+  .scanning-animation__scanning-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  @keyframes scanAnimation {
+    0% {
+      top: -100%;
+    }
+    50% {
+      top: 100%;
+    }
+    100% {
+      top: -100%;
+    }
+  }
+  
